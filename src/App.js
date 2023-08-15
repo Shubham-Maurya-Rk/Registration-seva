@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 
 function App() {
   useEffect(() => {
-    if(localStorage.getItem("youth")===null)localStorage.setItem("youth",JSON.stringify("[]"))
+    if(localStorage.getItem("youth")===null)localStorage.setItem("youth",JSON.stringify([]))
     return;
   }, [])
   
