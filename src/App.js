@@ -15,7 +15,7 @@ function App() {
     <Router  basename={process.env.PUBLIC_URL}>
       <Header/>
       <Routes>
-        <Route index exact path="/" element={<Form/>}/>
+        <Route exact path="/" element={<Form/>}/>
         <Route exact path="/list" element={<List/>}/>
       </Routes>
     </Router>
