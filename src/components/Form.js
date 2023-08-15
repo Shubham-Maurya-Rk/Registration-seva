@@ -23,11 +23,11 @@ function Form() {
         <div className='d-flex align-item-center justify-content-center'>
             <form className='form  mx-2 bg-color p-2 rounded text-start text-white w-100'>
                 <div className="mb-3">
-                    <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
+                    <label htmlFor="exampleInputEmail1" className="form-label">Name</label>
                     <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" onChange={e=>setName(e.target.value)} value={name} required/>
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
+                    <label htmlFor="exampleInputPassword1" className="form-label">Phone number</label>
                     <input type="number" className="form-control" value={call} id="exampleInputPassword1" onChange={e=>setCall(e.target.value)} required/>
                 </div>
                 <button className="btn btn-primary" onClick={handleSubmit}>Submit</button>
