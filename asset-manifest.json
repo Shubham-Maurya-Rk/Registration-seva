@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Registration-seva/static/css/main.d8c94374.css",
+    "main.js": "/Registration-seva/static/js/main.ac55d172.js",
+    "static/js/787.b21ebbd2.chunk.js": "/Registration-seva/static/js/787.b21ebbd2.chunk.js",
+    "index.html": "/Registration-seva/index.html",
+    "main.d8c94374.css.map": "/Registration-seva/static/css/main.d8c94374.css.map",
+    "main.ac55d172.js.map": "/Registration-seva/static/js/main.ac55d172.js.map",
+    "787.b21ebbd2.chunk.js.map": "/Registration-seva/static/js/787.b21ebbd2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d8c94374.css",
+    "static/js/main.ac55d172.js"
+  ]
+}
