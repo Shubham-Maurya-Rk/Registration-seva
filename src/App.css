@@ -13,3 +13,10 @@ body{
 .form{
   margin-top: 20vh;
 }
+
+
+@media only screen and (max-width: 600px) {
+  .table{
+    font-size: 12.5px !important;
+  }
+}
