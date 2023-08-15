@@ -1,24 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import Form from './components/Form';
+import List from './components/List';
+import Header from './components/Header';
+import { BrowserRouter as Router, Routes,Route } from 'react-router-dom'
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    if(localStorage.getItem("youth")===null)localStorage.setItem("youth",JSON.stringify("[]"))
+    return;
+  }, [])
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header/>
+      <Routes>
+        <Route index exact path="/" element={<Form/>}/>
+        <Route exact path="/list" element={<List/>}/>
+      </Routes>
+    </Router>
+    // <div className="App">
+    //   <Form/>
+    // </div>
   );
 }
 
